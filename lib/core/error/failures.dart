@@ -11,3 +11,8 @@ abstract class Failure extends Equatable {
     return properties != null ? [properties] : [];
   }
 }
+
+// concrete failure classes that map exceptions 1 to 1
+class ServerFailure extends Failure {}
+
+class ConnectivityFailure extends Failure {}
