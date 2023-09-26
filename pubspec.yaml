@@ -39,6 +39,8 @@ dependencies:
   dartz: ^0.10.1
   # value equality instead of reference equality
   equatable: ^2.0.5
+  # internet connection check
+  connectivity_plus: ^4.0.2
 
 dev_dependencies:
   flutter_test:
