@@ -13,6 +13,10 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: "stable"
+      - name: Decode base64 secrets (api_keys) to lib folder
+        run: echo $SECRETS_FILE_CONTENT | base64 -d > lib/core/configs/api/api_keys.dart
+        env:
+          SECRETS_FILE_CONTENT: ${{ secrets.SECRETS_FILE_CONTENT }}
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test

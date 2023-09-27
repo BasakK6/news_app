@@ -41,6 +41,8 @@ dependencies:
   equatable: ^2.0.5
   # internet connection check
   connectivity_plus: ^4.0.2
+  # network requests
+  dio: ^5.3.3
 
 dev_dependencies:
   flutter_test:
