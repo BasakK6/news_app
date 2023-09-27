@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
+import 'package:news_app/core/configs/api/api_configs.dart';
 import 'package:news_app/core/error/exceptions.dart';
 import 'package:news_app/core/error/failures.dart';
 import 'package:news_app/core/platform/network_info.dart';
@@ -10,7 +11,6 @@ import 'package:news_app/features/news_feed/data/models/news_feed_model.dart';
 import 'package:news_app/features/news_feed/data/repositories/news_feed_repository_impl.dart';
 import 'package:news_app/features/news_feed/domain/entities/news_feed_entity.dart';
 
-import '../../../../core/fixtures/api_configs.dart';
 import 'news_feed_repository_impl_test.mocks.dart';
 
 //mock the abstract network info (core/platform)

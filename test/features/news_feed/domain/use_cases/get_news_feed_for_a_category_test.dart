@@ -2,11 +2,11 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
+import 'package:news_app/core/configs/api/api_configs.dart';
 import 'package:news_app/features/news_feed/domain/entities/news_feed_entity.dart';
 import 'package:news_app/features/news_feed/domain/repositories/news_feed_repository.dart';
 import 'package:news_app/features/news_feed/domain/use_cases/get_news_feed_for_a_category.dart';
 
-import '../../../../core/fixtures/api_configs.dart';
 import 'get_news_feed_for_a_category_test.mocks.dart';
 
 //mock the abstract repository in the domain layer
