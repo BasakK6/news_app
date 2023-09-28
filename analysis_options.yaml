@@ -94,7 +94,6 @@ linter:
     only_throw_errors: true
     overridden_fields: true
     package_prefixed_library_names: true
-    parameter_assignments: true
     prefer_adjacent_string_concatenation: true
     prefer_asserts_in_initializer_lists: true
     prefer_asserts_with_message: true
@@ -159,7 +158,6 @@ linter:
     use_named_constants: true
     use_raw_strings: true
     use_rethrow_when_possible: true
-    use_setters_to_change_properties: true
     use_string_buffers: true
     use_test_throws_matchers: true
     use_to_and_as_if_applicable: true
