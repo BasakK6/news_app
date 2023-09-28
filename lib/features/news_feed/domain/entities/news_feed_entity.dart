@@ -31,6 +31,32 @@ class ArticlesEntity extends Equatable {
       this.publishedAt,
       this.content});
 
+  String get timeAgo {
+    // Parse the publishedAt String into a DateTime object
+    if (publishedAt == null) {
+      return "Unknown";
+    }
+    final DateTime now = DateTime.now();
+    final DateTime parsedTime = DateTime.parse(publishedAt!).toLocal();
+
+    // Calculate the time difference
+    final Duration difference = now.difference(parsedTime);
+
+    if (difference.inDays > 0) {
+      // If the difference is in days
+      return '${difference.inDays} ${difference.inDays == 1 ? 'Day' : 'Days'} ago';
+    } else if (difference.inHours > 0) {
+      // If the difference is in hours
+      return '${difference.inHours} ${difference.inHours == 1 ? 'Hour' : 'Hours'} ago';
+    } else if (difference.inMinutes > 0) {
+      // If the difference is in minutes
+      return '${difference.inMinutes} ${difference.inMinutes == 1 ? 'Minute' : 'Minutes'} ago';
+    } else {
+      // If the difference is in seconds or less
+      return 'Just now';
+    }
+  }
+
   @override
   List<Object?> get props => [
         source,
