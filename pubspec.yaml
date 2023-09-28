@@ -43,6 +43,8 @@ dependencies:
   connectivity_plus: ^4.0.2
   # network requests
   dio: ^5.3.3
+  # state management
+  flutter_riverpod: ^2.4.0
 
 dev_dependencies:
   flutter_test:
