@@ -11,3 +11,4 @@ const double kNewsItemTopMarginFactor = 0.02;
 const double kNewsItemBottomMarginFactor = 0.01;
 const double kNewsItemWidthFactor = 0.85;
 const double kNewsItemHeightFactor = kDefaultHeightFactor / 2;
+const double kBackArrowSize = 40;

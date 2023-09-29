@@ -6,6 +6,7 @@ import 'package:news_app/core/presentation/widgets/news_item_layout.dart';
 import 'package:news_app/core/presentation/widgets/project_error_text.dart';
 import 'package:news_app/core/presentation/widgets/project_progress_indicator.dart';
 import 'package:news_app/core/presentation/widgets/stretched_news_layout.dart';
+import 'package:news_app/features/news_details/presentation/pages/news_detail_page.dart';
 import 'package:news_app/features/news_feed/domain/entities/news_feed_entity.dart';
 import 'package:news_app/features/news_feed/presentation/providers/news_feed_providers.dart';
 
@@ -49,9 +50,7 @@ class NewsFeedBody extends ConsumerWidget {
               ? const SizedBox.shrink()
               : InkWell(
                   onTap: () async {
-                    /*
-                    await navigateToEntityDetails(context,entity: entity);
-                     */
+                    await navigateToEntityDetails(context, entity: entity);
                   },
                   child: buildListViewItem(index, entity),
                 );
@@ -66,10 +65,10 @@ class NewsFeedBody extends ConsumerWidget {
         : NewsItemLayout(articlesEntity: entity);
   }
 
-/*Future<void> navigateToEntityDetails(BuildContext context,
+  Future<void> navigateToEntityDetails(BuildContext context,
       {required ArticlesEntity entity}) async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (context) {
       return NewsDetailPage(articlesEntity: entity);
     }));
-  }*/
+  }
 }
