@@ -86,6 +86,44 @@ void main() {
       expect(result, equals('3 Days ago'));
     });
   });
+
+  group("gptArticleContent tests",(){
+    test("should return content when content is not null", () {
+      const testArticlesEntity = ArticlesEntity(
+        title:"Title",
+        description: "Description",
+        content: "Content",
+      );
+      expect(testArticlesEntity.gptArticleContent, equals("Content"));
+    });
+
+    test("should return combination this string: title + space character + description when content is null", () {
+      const testArticlesEntity = ArticlesEntity(
+        title:"Title",
+        description: "Description",
+      );
+      expect(testArticlesEntity.gptArticleContent, equals("Title Description"));
+    });
+
+    test("should return empty string when both title, description and content are null", () {
+      const testArticlesEntity = ArticlesEntity();
+      expect(testArticlesEntity.gptArticleContent, equals(""));
+    });
+
+    test("should return title when description is null", () {
+      const testArticlesEntity = ArticlesEntity(
+        title:"Title",
+      );
+      expect(testArticlesEntity.gptArticleContent, equals('Title'));
+    });
+
+    test("should return description when title is null", () {
+      const testArticlesEntity = ArticlesEntity(
+        description: "Description",
+      );
+      expect(testArticlesEntity.gptArticleContent, equals('Description'));
+    });
+  });
 }
 
 /*

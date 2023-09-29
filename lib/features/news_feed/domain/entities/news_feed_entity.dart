@@ -57,6 +57,17 @@ class ArticlesEntity extends Equatable {
     }
   }
 
+  String get gptArticleContent{
+    if(content != null) {
+      return content!;
+    }
+    else {
+      final resultText = "${title ?? ""} ${description ?? ""}";
+      //remove the space characters at the beginning and end (if any)
+      return resultText.trim();
+    }
+  }
+
   @override
   List<Object?> get props => [
         source,
