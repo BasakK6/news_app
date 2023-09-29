@@ -1,0 +1,13 @@
+const double kLeftRightPaddingFactor = 0.06;
+const double kNewsItemLayoutMarginFactor = 0.025;
+const double kRadius = 20;
+const double kPaddingSmall = 2;
+const double kDefaultHeightFactor = 0.25;
+const double kSliverAppBarHeightFactor = 0.35;
+const double kSliverBackgroundHeightFactor = 0.40;
+const double kFooterHeightFactor = 0.10;
+const double kBackArrowSizeFactor = 0.08;
+const double kNewsItemTopMarginFactor = 0.02;
+const double kNewsItemBottomMarginFactor = 0.01;
+const double kNewsItemWidthFactor = 0.85;
+const double kNewsItemHeightFactor = kDefaultHeightFactor / 2;

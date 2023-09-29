@@ -1,0 +1,1 @@
+const String kTestArticleContent = "There are several different promotional sales currently live on the PlayStation Store, discounting over 2,000 PS4 and PS5 games in the process. Most of these deals are either inconsequential discount";

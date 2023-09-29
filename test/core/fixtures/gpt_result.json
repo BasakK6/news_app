@@ -1,0 +1,19 @@
+{
+  "id": "cmpl-844MC2OPs6EFL5kI1FVWcUITzyCJn",
+  "object": "text_completion",
+  "created": 1695980752,
+  "model": "gpt-3.5-turbo-instruct",
+  "choices": [
+    {
+      "text": "\n\nThe PlayStation Store currently has multiple promotional sales offering discounts on over 2,000 PS4",
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 20,
+    "total_tokens": 66
+  }
+}
